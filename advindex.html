@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #searchbar {
+            border-radius: 2px;
+            width: 400px;
+            height: 40px;
+            border-color: lightgray;
+            border-style: solid;
+            border-width: thin;
+        }
+        
+        #searchbar:hover {
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.137);
+        }
+        
+        #searchbtn {
+            width: 140px;
+            height: 40px;
+            margin-top: 10px;
+            font-size: small;
+            border-style: thin;
+            border-color: #205ab638;
+            color: white;
+            background-color: #4285F4;
+        }
+        
+        #searchbtn:hover {
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.137);
+            background-color: #2d72e1;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: small;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+        }
+        
+        #links {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        
+        #page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+        }
+        
+        #page>form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #page>form>p {
+            padding: 10px;
+        }
+        
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="logo" src="Google-Advanced-Logo.png" alt="Google logo" width="100px">
+
+    <div id="links">
+        <a href="index.html">Google Search</a>
+        <a href="imgindex.html">Image Search</a>
+    </div>
+
+    <div id="page">
+
+        <form action="https://google.com/search">
+
+            <h2>Find pages with...</h2>
+            <p>all these words:</p>
+            <input type="text" name="as_q" id="searchbar">
+            <p>this exact word or phrase:</p>
+            <input type="text" name="as_epq" id="searchbar">
+            <p>any of these words:</p>
+            <input type="text" name="as_oq" id="searchbar">
+            <p>none of these words:</p>
+            <input type="text" name="as_eq" id="searchbar">
+            <input type="submit" value="Advanced Search" id="searchbtn">
+
+        </form>
+
+
+    </div>
+
+
+</body>
+
+</html>
